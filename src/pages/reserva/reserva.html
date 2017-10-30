@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Reserva</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <p>
+    Buscar apartamento en:
+  </p>
+  <p>
+    <button ion-button color="light" round>Varsovia</button>
+    <button ion-button color="light" round>Cracovia</button>
+    <button ion-button color="light" round>Otros</button>
+  </p>
+  <p>
+    Fecha de entrada:
+  </p>
+  <ion-item>
+    <ion-label>Entrada</ion-label>
+    <ion-datetime displayFormat="DD MMM" pickerFormat="D M" [(ngModel)]="event.timeStarts"></ion-datetime>
+  </ion-item>
+  <ion-item>
+    <ion-label>Salida</ion-label>
+    <ion-datetime displayFormat="DD MMM" pickerFormat="D M" [(ngModel)]="event.timeEnds"></ion-datetime>
+  </ion-item>
+  
+  <p>
+    <ion-item>
+      <ion-label color="primary" fixed>Adultos</ion-label>
+      <ion-input type="number" placeholder="1"></ion-input>
+  </ion-item>
+  </p>
+  <p>
+    <ion-item>
+      <ion-label color="primary" fixed>Niños</ion-label>
+      <ion-input type="number" placeholder="0"></ion-input>
+  </ion-item>
+  </p>
+  <p>Viajas por trabajo?
+    <button ion-button color="light" round>Si</button>
+    <button ion-button color="light" round>No</button>
+  </p>
+  <p>
+    <button ion-button block color="primary" menuToggle>Buscar apartamentos</button>
+  </p>
+
+</ion-content>
