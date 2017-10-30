@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ReservaPage } from '../pages/reserva/reserva';
+import { ViajePage } from '../pages/viaje/viaje';
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
 
@@ -16,6 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     ReservaPage,
+    ViajePage,
     ItemDetailsPage,
     ListPage
   ],
@@ -28,6 +30,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HelloIonicPage,
     ReservaPage,
+    ViajePage,
     ItemDetailsPage,
     ListPage
   ],
