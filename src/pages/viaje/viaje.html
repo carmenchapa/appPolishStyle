@@ -10,14 +10,23 @@
 
 <ion-content padding>
 
-  <ion-slides pager>
+<ion-tabs selectedIndex="1">
+  <ion-tab tabIcon="search" [root]="tab1Root"></ion-tab>
+  <ion-tab tabIcon="plane" [root]="tab2Root"></ion-tab>
+  <ion-tab tabIcon="home" [root]="tab3Root"></ion-tab>
+  <ion-tab tabIcon="plane" [root]="tab4Root"></ion-tab>
+
+</ion-tabs>
+
+
+<!--   <ion-slides pager>
       <ion-slide *ngFor="let slide of slides">
         <ion-toolbar>
           <ion-buttons end>
             <button ion-button color="primary">Skip</button>
           </ion-buttons>
         </ion-toolbar>
-        <!-- <div [innerHTML]="slide.component"></div> -->
+        <div [innerHTML]="slide.component"></div>
         <img [src]="slide.image" class="slide-image"/>
         <h2 class="slide-title" [innerHTML]="slide.title"></h2>
         <p [innerHTML]="slide.description"></p>
@@ -32,7 +41,7 @@
           <ion-icon name="arrow-forward"></ion-icon>
         </button>
       </ion-slide>
-    </ion-slides>
+    </ion-slides> -->
 
 
 </ion-content>
