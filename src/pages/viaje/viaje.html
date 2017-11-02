@@ -3,14 +3,14 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Viaje</ion-title>
+    <ion-title>{{ tabTitle }}</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 
-<ion-tabs selectedIndex="1">
+<ion-tabs selectedIndex="0">
   <ion-tab tabIcon="search" [root]="tab1Root"></ion-tab>
   <ion-tab tabIcon="plane" [root]="tab2Root"></ion-tab>
   <ion-tab tabIcon="home" [root]="tab3Root"></ion-tab>

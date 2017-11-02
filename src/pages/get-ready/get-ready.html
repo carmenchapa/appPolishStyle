@@ -1,23 +1,42 @@
-<!-- <ion-header>
+<ion-header>
   <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Hello Ionic</ion-title>
+    <ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-7>
+          <p>Detalles de tu vuelo:</p>
+          <p>MU2234 | LON <ion-icon name="plane"></ion-icon> WAW<br>Aterriza el viernes a las 20:32</p>
+        </ion-col>
+     
+        <ion-col col-5style="display: inherit">
+          <ion-row>
+            <button ion-button color="primary" round>Cambiar</button>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
   </ion-navbar>
-</ion-header> -->
+</ion-header>
 
 
 <ion-content padding>
 
-  <h3>Prepara tu viaje</h3>
+  <ion-grid class="grid-top">
+    <ion-row justify-content-center>
+      <ion-col col-6 >
+            <p>Previsión de tiempo:</p>
+            <ion-icon class="tiempo-icon" name="sunny"></ion-icon><p> 14º / 19 º</p>
+      </ion-col>
+      <ion-col col-6 justify-content-right>
+            <p>Moneda local:<br>Zlotys</p>
+            <p>£1 = 4.80zl</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <button ion-button block outline color="primary">Descarga tu guía</button>
+    </ion-row>
+  </ion-grid>
 
-  <p>
-    No olvides...
-  </p>
-  <p>
-    Y...
-  </p>
   
 
 </ion-content>
