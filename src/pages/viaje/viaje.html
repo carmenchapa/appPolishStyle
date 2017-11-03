@@ -3,22 +3,22 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>{{ tabTitle }}</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content padding>
 
-<ion-tabs selectedIndex="0">
-  <ion-tab tabIcon="search" [root]="tab1Root"></ion-tab>
-  <ion-tab tabIcon="plane" [root]="tab2Root"></ion-tab>
-  <ion-tab tabIcon="home" [root]="tab3Root"></ion-tab>
-  <ion-tab tabIcon="plane" [root]="tab4Root"></ion-tab>
+<ion-tabs selectedIndex="2">
+  <ion-tab tabIcon="search" [root]="tab1Root" (ionSelect)="this.title ='Prepárate'"></ion-tab>
+  <ion-tab tabIcon="plane" [root]="tab2Root" (ionSelect)="this.title ='Check-in'"></ion-tab>
+  <ion-tab tabIcon="home" [root]="tab3Root" (ionSelect)="this.title ='El apartamento'"></ion-tab>
+  <ion-tab tabIcon="plane" [root]="tab4Root" (ionSelect)="this.title ='Check-out'"></ion-tab>
 
 </ion-tabs>
 
-
+ 
 <!--   <ion-slides pager>
       <ion-slide *ngFor="let slide of slides">
         <ion-toolbar>

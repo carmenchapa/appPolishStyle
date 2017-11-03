@@ -10,14 +10,32 @@
 
 <ion-content padding>
 
-  <h3>Check-out</h3>
+  <p>Hasta la vista:</p>
+   <ion-list>
 
-  <p>
-    No olvides...
-  </p>
-  <p>
-    Y...
-  </p>
-  
+    <ion-item *ngFor="let item of items" >
+     
+      <!-- <ion-checkbox [(ngModel)]="data.jon"></ion-checkbox> -->
+      <ion-checkbox></ion-checkbox>
 
+      <ion-label> {{ item }}</ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-grid justify-content-center>
+        <ion-row justify-content-center>
+          <ion-col col-8>
+            <p>Puedes dejar tus maletas con nosotros</p>
+          </ion-col>  
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col col-8>
+            <button ion-button block color="primary">Custodia de maletas</button>
+          </ion-col>  
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+</ion-footer>

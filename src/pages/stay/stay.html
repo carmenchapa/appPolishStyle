@@ -20,14 +20,98 @@
 
 <ion-content padding>
 
-  <h3>Stay</h3>
+  <ion-toolbar class="wifi-toolbar">
+    <ion-grid justify-content-center>
+      <ion-row align-items-center justify-content-center>
+        <ion-col col-4>
+        <p><ion-icon name="ios-wifi"></ion-icon> V23314</p>
+      </ion-col>
+      <ion-col col-8>
+        <p><ion-icon name="unlock"></ion-icon> W123vwQR78shT335</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-toolbar>
 
-  <p>
-    No olvides...
-  </p>
-  <p>
-    Y...
-  </p>
-  
+<!-- <ion-toolbar> -->
+<ion-card class="card-toolbar">
+    <ion-card-header>
+      {{ title }}
+    </ion-card-header>
+    <ion-card-content>
+      <ion-segment [(ngModel)]="title" color="dark">
+        <ion-segment-button value="Paquetes:">
+          <ion-icon name="book"></ion-icon>
+        </ion-segment-button>
+        <ion-segment-button value="Dudas frecuentes:">
+          <ion-icon name="help-circle"></ion-icon>
+        </ion-segment-button>
+      </ion-segment>
 
-</ion-content>
+      <ion-list style="margin: 0" inset>
+        <ion-item-sliding  *ngFor="let sItem of getItems(title)">
+          <button ion-item>
+            <ion-thumbnail item-start [class]="sItem.classavatar">
+            <!-- <ion-avatar item-start [class]="sItem.classavatar"> -->
+              <img [src]="sItem.src">
+            <!-- </ion-avatar> -->
+          </ion-thumbnail>
+            <h2>{{ sItem.name }}</h2>
+            <p>{{ sItem.caption }}</p>
+          </button>
+          <ion-item-options side="right">
+            <button ion-button color="light" icon-start>
+              <ion-icon name="ios-more"></ion-icon>
+              Más
+            </button>
+            <button ion-button color="secondary" icon-start>
+              <ion-icon name="cart"></ion-icon>
+              Comprar
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+    <ion-toolbar>
+      <ion-grid justify-content-center>
+        <ion-row justify-content-center>
+          <ion-col col-8>
+            <button ion-button block color="primary">Contacta por Whatsapp</button>
+          </ion-col>
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col col-4>
+            <button ion-button block color="primary" outline>Teléfono</button>
+          </ion-col>
+          <ion-col col-4>
+            <button ion-button block color="primary" outline>SMS</button>
+          </ion-col>
+        </ion-row>       
+      </ion-grid>
+    </ion-toolbar>
+  </ion-content>
+
+<!-- <ion-footer>
+  <ion-toolbar>
+    <ion-grid justify-content-center>
+      <ion-row justify-content-center>
+        <ion-col col-8>
+          <button ion-button block color="primary">Contacta por Whatsapp</button>
+        </ion-col>
+      </ion-row>
+      <ion-row justify-content-center>
+        <ion-col col-4>
+          <button ion-button block color="light">Teléfono</button>
+        </ion-col>
+        <ion-col col-4>
+          <button ion-button block color="light">SMS</button>
+        </ion-col>
+      </ion-row>       
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer> -->
+
+<!-- </ion-content> -->

@@ -7,13 +7,13 @@ import { CheckOutPage } from '../check-out/check-out';
 
 
 @Component({
-  selector: 'viaje',
+  selector: 'page-viaje',
   templateUrl: 'viaje.html'
 })
 export class ViajePage {
 
   tabTitle = 'nombre';
-
+                
   tab1Root = GetReadyPage;
   tab2Root = CheckInPage;
   tab3Root = StayPage;
