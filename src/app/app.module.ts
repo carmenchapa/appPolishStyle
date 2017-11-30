@@ -10,6 +10,7 @@ import { GetReadyPage } from '../pages/get-ready/get-ready';
 import { CheckInPage } from '../pages/check-in/check-in';
 import { StayPage } from '../pages/stay/stay';
 import { CheckOutPage } from '../pages/check-out/check-out';
+import { ProfilePage } from '../pages/profile/profile';
 
 import { ItemDetailsPage } from '../pages/item-details/item-details';
 import { ListPage } from '../pages/list/list';
@@ -27,6 +28,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CheckInPage,
     StayPage,
     CheckOutPage,
+    ProfilePage,
 
     ItemDetailsPage,
     ListPage
@@ -48,6 +50,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     CheckInPage,
     StayPage,
     CheckOutPage,
+    ProfilePage,
     ItemDetailsPage,
     ListPage
   ],

@@ -22,4 +22,12 @@
     <button ion-button color="primary" menuToggle>Toggle Menu</button>
   </p>
 
+
+<ion-tabs selectedIndex="2" color="brown">
+  <ion-tab tabTitle="Book" [root]="tab1Root" (ionSelect)="this.title ='Prepárate'"></ion-tab>
+  <ion-tab tabTitle="Trip" [root]="tab2Root" (ionSelect)="this.title ='Check-in'"></ion-tab>
+  <ion-tab tabTitle="Profile" [root]="tab3Root" (ionSelect)="this.title ='El apartamento'"></ion-tab>
+
+</ion-tabs>
+
 </ion-content>

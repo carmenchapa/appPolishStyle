@@ -1,3 +1,7 @@
 page-hello-ionic {
 
+	.tabs-ios-brown .tab-button[aria-selected=true] {
+		opacity: 1;	
+	    color: #F1C24C;
+	}
 }

@@ -1,0 +1,41 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hello Ionic</ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+
+<ion-content padding>
+
+  <p>Tu perfil:</p>
+   <ion-list>
+
+    <ion-item *ngFor="let item of items" >
+     
+      <!-- <ion-checkbox [(ngModel)]="data.jon"></ion-checkbox> -->
+      <ion-checkbox></ion-checkbox>
+
+      <ion-label> {{ item }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+      <ion-grid justify-content-center>
+        <ion-row justify-content-center>
+          <ion-col col-8>
+            <p>Puedes dejar tus maletas con nosotros</p>
+          </ion-col>  
+        </ion-row>
+        <ion-row justify-content-center>
+          <ion-col col-8>
+            <button ion-button block color="primary">Custodia de maletas</button>
+          </ion-col>  
+        </ion-row>
+      </ion-grid>
+    </ion-toolbar>
+</ion-footer>
